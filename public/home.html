@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../src/assets/icon/css/all.min.css">
+    <link rel="stylesheet" href="../dist/style.css">
+    <link rel="stylesheet" href="../src/input.css">
+    <style>
+        :root{
+            --customColor: red
+        }
+                    
+        .lamp{
+            background: transparent url('../src/assets/image/lamp.png') 0 0 no-repeat;
+            animation: lamp 1s step-end infinite;
+            transition-timing-function: linear;
+            transition-property: left;
+            width: 39px;
+            height: 35px;
+        }
+        .lamp-position-1{
+            background-position-y: 0;
+        }
+        .lamp-position-2{
+            background-position-y: -35px;
+        }
+
+        @keyframes lamp{
+            0%{
+                background-position-x: 0;
+            }
+            10%{
+                background-position-x: -39px;
+            }
+            20%{
+                background-position-x: -78px;
+            }
+            30%{
+                background-position-x: -117px;
+            }
+            40%{
+                background-position-x: -156px;
+            }
+            50%{
+                background-position-x: -195px;
+            }
+            60%{
+                background-position-x: -234px;
+            }
+            70%{
+                background-position-x: -273px;
+            }
+            80%{
+                background-position-x: -312px;
+            }
+            90%{
+                background-position-x: -351px;
+            }
+        }
+
+        .man1{
+            background: transparent url('../src/assets/image/gina.png') 0 0 no-repeat;
+            animation: man12 0.5s step-end infinite;
+            transition-timing-function: linear;
+            transition-property: left;
+        }
+        .man2{
+            background: transparent url('../src/assets/image/ken.png') 0 0 no-repeat;
+            animation: man6 1s step-end infinite;
+            transition-timing-function: linear;
+            transition-property: left;
+        }
+
+        .man4{
+            background: transparent url('../src/assets/image/cindy.png') 0 0 no-repeat;
+            animation: man6 1.5s step-end infinite;
+            transition-timing-function: linear;
+            transition-property: left;
+        }
+        
+        .man6{
+             background: transparent url('../src/assets/image/lisa.png') 0 0 no-repeat;
+            animation: man6 2s step-end infinite;
+            transition-timing-function: linear;
+            transition-property: left;
+        }
+
+        @keyframes man6 {
+            0% {background-position-x: 0;}
+            5% {background-position-x: -80px;}
+            10% {background-position-x: -160px;}
+            15% {background-position-x: -240px;}
+            20% {background-position-x: -320px;}
+            25% {background-position-x: -400px;}
+            30% {background-position-x: -480px;}
+            35% {background-position-x: -560px;}
+            40% {background-position-x: -640px;}
+            45% {background-position-x: -720px;}
+            50% {background-position-x: -800px;}
+            55% {background-position-x: -880px;}
+            60% {background-position-x: -960px;}
+            65% {background-position-x: -1040px;}
+            70% {background-position-x: -1120px;}
+            75% {background-position-x: -1200px;}
+            80% {background-position-x: -1280px;}
+            85% {background-position-x: -1360px;}
+            90% {background-position-x: -1440px;}
+            95% {background-position-x: -1520px;}
+        }
+        .man8{
+            background: transparent url('../src/assets/image/oman.png') 0 0 no-repeat;
+            animation: man8 3s step-end infinite;
+            transition-timing-function: linear;
+            transition-property: left;
+        }
+        @keyframes man8 {
+            0% {background-position-x: -0px;}
+            2.5% {background-position-x: -80px;}
+            5% {background-position-x: -160px;}
+            7.5% {background-position-x: -240px;}
+            10% {background-position-x: -320px;}
+            12.5% {background-position-x: -400px;}
+            15% {background-position-x: -480px;}
+            17.5% {background-position-x: -560px;}
+            20% {background-position-x: -640px;}
+            22.5% {background-position-x: -720px;}
+            25% {background-position-x: -800px;}
+            27.5% {background-position-x: -880px;}
+            30% {background-position-x: -960px;}
+            32.5% {background-position-x: -1040px;}
+            35% {background-position-x: -1120px;}
+            37.5% {background-position-x: -1200px;}
+            40% {background-position-x: -1280px;}
+            42.5% {background-position-x: -1360px;}
+            45% {background-position-x: -1440px;}
+            47.5% {background-position-x: -1520px;}
+            50% {background-position-x: -1600px;}
+            52.5% {background-position-x: -1680px;}
+            55% {background-position-x: -1760px;}
+            57.5% {background-position-x: -1840px;}
+            60% {background-position-x: -1920px;}
+            62.5% {background-position-x: -2000px;}
+            65% {background-position-x: -2080px;}
+            67.5% {background-position-x: -2160px;}
+            70% {background-position-x: -2240px;}
+            72.5% {background-position-x: -2320px;}
+            75% {background-position-x: -2400px;}
+            77.5% {background-position-x: -2480px;}
+            80% {background-position-x: -2560px;}
+            82.5% {background-position-x: -2640px;}
+            85% {background-position-x: -2720px;}
+            87.5% {background-position-x: -2800px;}
+            90% {background-position-x: -2880px;}
+            92.5% {background-position-x: -2960px;}
+            95% {background-position-x: -3040px;}
+            97.5% {background-position-x: -3120px;}
+        }
+        .man12{
+            background: transparent url('../src/assets/image/tom.png') 0 0 no-repeat;
+            animation: man12 1.5s step-end infinite;
+            transition-property: left;
+            transition-timing-function: linear;
+        }
+
+        @keyframes man12{
+            0% {background-position-x: 0;}
+            3.33% {background-position-x: -80px;}
+            6.66% {background-position-x: -160px;}
+            9.99% {background-position-x: -240px;}
+            13.32% {background-position-x: -320px;}
+            16.65% {background-position-x: -400px;}
+            19.98% {background-position-x: -480px;}
+            23.31% {background-position-x: -560px;}
+            26.64% {background-position-x: -640px;}
+            29.97% {background-position-x: -720px;}
+            33.33% {background-position-x: -800px;}
+            36.63% {background-position-x: -880px;}
+            39.96% {background-position-x: -960px;}
+            43.29% {background-position-x: -1040px;}
+            46.62% {background-position-x: -1120px;}
+            49.95% {background-position-x: -1200px;}
+            53.28% {background-position-x: -1280px;}
+            56.61% {background-position-x: -1360px;}
+            59.94% {background-position-x: -1440px;}
+            63.27% {background-position-x: -1520px;}
+            66.66% {background-position-x: -1600px;}
+            69.93% {background-position-x: -1680px;}
+            73.26% {background-position-x: -1760px;}
+            76.59% {background-position-x: -1840px;}
+            79.92% {background-position-x: -1920px;}
+            83.25% {background-position-x: -2000px;}
+            86.58% {background-position-x: -2080px;}
+            89.91% {background-position-x: -2160px;}
+            93.24% {background-position-x: -2240px;}
+            96.57% {background-position-x: -2320px;}
+        }
+        .player{
+            width: 80px;
+            height: 100px;
+        }
+        .girl{
+            color: var(--customColor);
+        }
+
+        .foot{
+            background-image: url('../src/assets/image/foot.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 240px;
+            width: 100%;
+        }
+
+        .game-bg{
+            background-image: url('../src/assets/image/peakpx.jpg');
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .cloud{
+            left: -288px;
+            opacity: .8;
+            animation: cloud 40000ms linear infinite;
+        }
+
+        @keyframes cloud{
+            100%{
+                left: 100%;
+            }
+        }
+
+        .cloud3{
+            left: -288px;
+            opacity: .8;
+            transform: rotate(-180deg);
+            animation: cloud 40000ms linear infinite 20s;
+        }
+
+        @keyframes cloud{
+            100%{
+                left: 100%;
+            }
+        }
+
+        .cloud2{
+            left: -320px;
+            opacity: .8;
+            animation: cloud 40000ms linear infinite 50s;
+        }
+
+        @keyframes cloud{
+            100%{
+                left: 100%;
+            }
+        }
+
+        .updown{
+            animation: updown 800ms infinite linear alternate;
+        }
+
+        @keyframes updown{
+            from{
+                opacity: 0.3;
+            }to{
+                opacity: 1;
+            }
+        }
+        
+        .size{
+            animation: size 2s linear;
+            font-weight: bolder;
+        }
+
+        @keyframes size{
+            from{
+                transform: translateX(-50%) scale(0);
+            }
+            to{
+                transform: translateX(-50%) scale(1);
+            }
+        }
+
+        .containers{
+            width: 1260px;
+            margin: auto;
+        }
+        .position1{
+            background-position-y: 0px;
+        }
+        .position2{
+            background-position-y: -100px;
+        }
+        .position3{
+            background-position-y: -200px;
+        }
+        .position4{
+            background-position-y: -300px;
+        }
+    </style>
+</head>
+<body class="bg-[#ECF0F3] font-nunito"> 
+    <div class="containers mx-auto h-[580px] overflow-hidden relative">
+        <div class="winMsg absolute top-[200px] text-7xl left-1/2 text-yellow-300 transform -translate-x-1/2 winResult hidden z-50 italic">Congratulation</div>
+        <div class="text-white absolute bottom-6 left-4 z-50 passing-msg font-semibold text-2xl italic"></div>
+        <div class="relative border-2 border-black flex flex-wrap items-end h-full rounded-xl mt-6 game-bg">
+            <div class="flex space-x-4 absolute top-4 left-4 z-40">
+                <button id="1" class="playerPoster  cursor-pointer relative rounded-md overflow-hidden">
+                    <img src="../src/assets/image/gina.jpg" alt="">
+                    <div class="text-center bg-[#3f000070] font-bold absolute bottom-0 left-0 w-full text-white">
+                        Gina(<span class="speed">1</span>sec)
+                    </div>
+                </button>
+                <button id="2" class="playerPoster cursor-pointer relative rounded-md overflow-hidden">
+                    <img src="../src/assets/image/ken.jpg" alt="">
+                    <div class="text-center bg-[#3f000070] font-bold absolute bottom-0 left-0 w-full text-white">Ken(<span class="speed">2</span>sec)</div>
+                </button>
+                <button id="3" class="playerPoster cursor-pointer relative rounded-md overflow-hidden">
+                    <img src="../src/assets/image/cindy.jpg" alt="">
+                    <div class="text-center bg-[#3f000070] font-bold absolute bottom-0 left-0 w-full text-white">Cindy(<span class="speed">4</span>sec)</div>
+                </button>
+                <button id="4" class="playerPoster cursor-pointer relative rounded-md overflow-hidden">
+                    <img src="../src/assets/image/lisa.jpg" alt="">
+                    <div class="text-center bg-[#3f000070] font-bold absolute bottom-0 left-0 w-full text-white">Lisa(<span class="speed">6</span>sec)</div>
+                </button>
+                <button id="5" class="playerPoster cursor-pointer relative rounded-md overflow-hidden">
+                    <img src="../src/assets/image/oman.jpg" alt="">
+                    <div class="text-center bg-[#3f000070] font-bold absolute bottom-0 left-0 w-full text-white">Oman(<span class="speed">8</span>sec)</div>
+                </button>
+                <button id="6" class="playerPoster  cursor-pointer relative rounded-md overflow-hidden">
+                    <img src="../src/assets/image/tom.jpg" alt="">
+                    <div class="text-center bg-[#3f000070] font-bold absolute bottom-0 left-0 w-full text-white">
+                        Tom(<span class="speed">12</span>sec)
+                    </div>
+                </button>
+                <div class="cursor-pointer relative  overflow-hidden">
+                    <button class="go-btn text-gray-200 rounded-md mt-4 w-24 border-2 border-dotted border-white italic font-bold text-2xl">GO!</button>
+                </div>
+                <div class="cursor-pointer relative  overflow-hidden">
+                    <button class="restart text-gray-200 ml-32 rounded-md mt-4 w-24 py-1 border-2 border-dotted border-white italic font-bold">RESET</button>
+                </div>
+            </div>
+
+            <div class="foot relative w-full">
+                <div class="lamp absolute top-[8px] z-0" style="left:26%;" data-side="right">
+                </div>
+                <div class="player player1 absolute top-[-53px] man1"  data-side="left"  data-position="0" data-position2="0" style="left: 0%;">
+                </div>
+                <div class="player player2 absolute top-[-53px] w-16 h-16 man2" data-side="left"  data-position="3" data-position2="3" style="left: 3%;">
+                </div>
+                <div class="player player3 absolute top-[-53px] w-16 h-16 man4" data-side="left" data-position="6" data-position2="6" style="left:6%";>
+                </div>
+                <div class="player player4 absolute top-[-53px] w-16 h-16 man6" data-side="left" data-position="10" data-position2="10" style="left: 10%">
+                </div>
+                <div class="player player5 absolute top-[-53px] w-16 h-16 man8" data-side="left" data-position="14" data-position2="14" style="left: 14%">
+                </div>
+                <div class="player player6 absolute top-[-53px] w-16 h-16 man12" data-side="left" data-position="17" data-position2="17" style="left: 17%">
+                </div>
+            </div>
+            <div class="count-btn w-20 h-20 bg-orange-500 flex flex-wrap justify-center items-center z-40 absolute top-20 right-8 rounded-full">
+                <div class="count-btn flex text-center justify-center leading-none items-center w-16 h-16 bg-gray-700 rounded-full">
+                    <div class="text-white">
+                        <div class="w-full text-xl leading-none count-time">30</div>
+                        <p class="text-sm text-center">seconds</p>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute w-72 top-[15%] cloud">
+                <img class="w-full" src="../src/assets/image/cloud.png" alt="">
+            </div>
+            <div class="absolute w-80 top-[10%] cloud2">
+                <img class="w-full" src="../src/assets/image/cloud.png" alt="">
+            </div>
+            <div class="absolute w-80 top-[5%] cloud3">
+                <img class="w-full" src="../src/assets/image/cloud.png" alt="">
+            </div>
+        </div>
+    </div>
+    <script>
+        
+    </script>
+<script src="../src/assets/js/index.js"></script>
+</body>
+</html>
